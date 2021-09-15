@@ -2,18 +2,21 @@
 
 namespace ConsoleApp1
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            const string MyName = "Irina";
-            Console.WriteLine(MyName);
+	class MainClass
+	{
+		public static void Main(string[] args)
+		{
 
-            Console.WriteLine("\t Привет, мир");
-            Console.WriteLine("\t Мне 18 лет");
-            Console.WriteLine("\t My name is \n Irina");
+			string MyName = "Irina";
+			byte MyAge = 18;
+			bool HaveIApet = true;
+			double MyShoeSize = 38.5;
 
-            Console.ReadKey();
-        }
-    }
+			Console.WriteLine("My name is " + MyName);
+			Console.WriteLine("MyAge " + MyAge);
+			Console.WriteLine("Do I have a pet? " + HaveIApet);
+			Console.WriteLine("My shoe size is " + MyShoeSize);
+
+		}
+	}
 }
