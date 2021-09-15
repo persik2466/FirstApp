@@ -8,7 +8,7 @@ namespace ConsoleApp1
         {
             //Console.WriteLine("Hello World!");
             string MyName;
-            MyName = "Jane";
+            MyName = "Irina";
             Console.WriteLine(MyName);
             Console.ReadKey();
         }
