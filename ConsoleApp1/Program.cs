@@ -7,15 +7,16 @@ namespace ConsoleApp1
 		public static void Main(string[] args)
 		{
 
-			string MyName = "Irina";
-			byte MyAge = 18;
-			bool HaveIApet = true;
-			double MyShoeSize = 38.5;
+			Console.Write("Введите свое имя: ");
+			var name = Console.ReadLine();
+			Console.Write("Введите свой возраст: ");
+			var age = Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine("Ваше имя {0} и возраст {1} ", name, age);
+			Console.Write("Введите свою дату рождения: ");
+			var birthdate = Console.ReadLine();
+			Console.WriteLine("Ваш день рождения {0} ", birthdate);
 
-			Console.WriteLine("My name is " + MyName);
-			Console.WriteLine("MyAge " + MyAge);
-			Console.WriteLine("Do I have a pet? " + HaveIApet);
-			Console.WriteLine("My shoe size is " + MyShoeSize);
+			Console.ReadKey();
 
 		}
 	}
