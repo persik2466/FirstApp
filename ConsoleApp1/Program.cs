@@ -7,17 +7,33 @@ namespace ConsoleApp1
 		public static void Main(string[] args)
 		{
 
-			Console.Write("Введите свое имя: ");
-			var name = Console.ReadLine();
-			Console.Write("Введите свой возраст: ");
-			var age = Convert.ToInt32(Console.ReadLine());
-			Console.WriteLine("Ваше имя {0} и возраст {1} ", name, age);
-			Console.Write("Введите свою дату рождения: ");
-			var birthdate = Console.ReadLine();
-			Console.WriteLine("Ваш день рождения {0} ", birthdate);
+			Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
 
-			Console.ReadKey();
+			var color = Console.ReadLine();
 
+			if (color == "red")
+			{
+				Console.BackgroundColor = ConsoleColor.Red;
+				Console.ForegroundColor = ConsoleColor.Black;
+
+				Console.WriteLine("Your color is red!");
+			}
+
+			else if (color == "green")
+			{
+				Console.BackgroundColor = ConsoleColor.Green;
+				Console.ForegroundColor = ConsoleColor.Black;
+
+				Console.WriteLine("Your color is green!");
+			}
+			else
+			{
+				Console.BackgroundColor = ConsoleColor.Cyan;
+				Console.ForegroundColor = ConsoleColor.Black;
+
+				Console.WriteLine("Your color is cyan!");
+
+			}
 		}
 	}
 }
